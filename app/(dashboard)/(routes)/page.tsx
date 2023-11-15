@@ -1,5 +1,9 @@
+import { UserButton } from "@clerk/nextjs"
+
 export default function Home() {
   return (
-    <p>Página privada</p>
+    <UserButton
+      afterSignOutUrl="/" // Redirect to home page after sign out
+    />
   )
 }
